@@ -40,11 +40,11 @@
 </form>
 
 <script>
-const userID = ''; // Add your user ID here
+const userID = '540BMCC02238'; // Replace '540BMCC02238' with your actual USPS user ID
 
 const createRequest = function() {
     let req = 'https://secure.shippingapis.com/ShippingApi.dll?API=CityStateLookup&XML=';
-    req += '<CityStateLookupRequest USERID=' + userID + '>';
+    req += '<CityStateLookupRequest USERID="' + userID + '">';
     req += '<ZipCode ID="0">';
     req += '<Zip5>' + document.getElementById('zip5').value + '</Zip5>';
     req += '</ZipCode>';
